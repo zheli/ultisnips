@@ -1,6 +1,10 @@
 priority -50
 
-snippet rdb "rdb helper"
-	from celery.contrib import rdb
-	rdb.set_trace()
+snippet rdb "remote debugger for celery"
+from celery.contrib import rdb; rdb.set_trace()
+endsnippet
+
+snippet djmh "django module header"
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 endsnippet
